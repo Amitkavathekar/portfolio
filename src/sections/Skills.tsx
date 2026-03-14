@@ -11,7 +11,6 @@ import {
   FaReact,
   FaJava,
   FaGithub,
-  FaNodeJs,
   FaDatabase,
 } from "react-icons/fa"
 import { SiTailwindcss, SiC } from "react-icons/si"
