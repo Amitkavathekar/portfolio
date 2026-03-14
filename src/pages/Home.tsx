@@ -21,6 +21,7 @@ export default function Home() {
       <Contact />
 
       <Footer />
+      <h1>hi</h1>
     </>
   )
 }
