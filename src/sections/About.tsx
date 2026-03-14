@@ -1,9 +1,10 @@
 import { useState } from 'react'
+import { Button } from "../components/ui/button.tsx"
 import laptopworking from '../assets/laptopworking.avif'
 
 export default function About() {
   const [copied, setCopied] = useState(false)
-  const email = 'amitkavathekar@example.com' // Replace with your email
+  const email = 'amitkavathekar123@example.com' // Replace with your email
 
   const handleCopyEmail = async () => {
     try {
@@ -35,13 +36,21 @@ export default function About() {
             user-friendly web applications.
           </p>
 
-          <button
+          <Button
             onClick={handleCopyEmail}
-            className="mt-4 bg-orange-500 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-300 transition"
+            className="
+              mt-4
+              uppercase tracking-widest
+              bg-orange-500 text-white
+              shadow-[6px_6px_0px_#d1d5db]
+              transition
+              hover:text-black hover:shadow-[6px_6px_0px_#ea580c]
+              active:text-black active:shadow-[6px_6px_0px_#ea580c]
+            "
             type="button"
           >
             {copied ? 'Copied!' : 'Copy Email'}
-          </button>
+          </Button>
         </div>
       </div>
     </section>
