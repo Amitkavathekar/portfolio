@@ -1,9 +1,7 @@
 import { Button } from "../components/ui/button.tsx"
 import { Card } from "../components/ui/card.tsx"
-import { mealaweImg, codeeditorImg } from "../assets"
+import { mealaweImg, codeeditorImg,blinkitImg } from "../assets"
 
-// Import public images at the top
-import blinkitImg from "/assets/img/blinkit home page.png"
 import temperatureImg from "/assets/img/tempreture.jpg"
 import organicFoodImg from "/assets/img/1 (2).jpg"
 import googleHomeImg from "/assets/img/google.home.jpg"
