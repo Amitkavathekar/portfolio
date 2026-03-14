@@ -1,13 +1,12 @@
 import { Button } from "../components/ui/button.tsx"
 import { Card } from "../components/ui/card.tsx"
+import { mealaweImg, codeeditorImg } from "../assets"
 
-// Import images at the top
+// Import public images at the top
 import blinkitImg from "/assets/img/blinkit home page.png"
 import temperatureImg from "/assets/img/tempreture.jpg"
 import organicFoodImg from "/assets/img/1 (2).jpg"
 import googleHomeImg from "/assets/img/google.home.jpg"
-import mealaweImg from "../assets/mealawe .jpg"
-import codeeditor from"../assets/codeeditor .jpg"
 // Fix quickcodeImg to use a placeholder since the file does not exist
 
 interface Project {
@@ -26,7 +25,7 @@ const projects: Project[] = [
     description:
       "A real-time code editor with syntax highlighting, autocomplete, and live preview functionality. Includes dark/light mode, export to PDF, and one-click copy & clear actions.",
     tech: "HTML, CSS, JavaScript, Ace Editor Library",
-    image: codeeditor,
+    image: codeeditorImg,
     demo: "https://livecodeio.vercel.app/",
     reverse: false,
   },

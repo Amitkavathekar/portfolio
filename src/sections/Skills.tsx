@@ -1,6 +1,5 @@
 import { Card } from "../components/ui/card"
-
-import image5 from "../assets/5.jpg"
+import { skillsImage } from "../assets"
 
 // Use react-icons for consistent working icons
 import {
@@ -108,7 +107,7 @@ export default function Skills() {
           <div className="flex h-full w-full items-center justify-center md:w-1/2">
             <div className="flex h-full w-full">
               <img
-                src={image5}
+                src={skillsImage}
                 alt="Skills Illustration"
                 className="h-full w-full rounded-lg object-cover shadow-lg"
                 style={{
