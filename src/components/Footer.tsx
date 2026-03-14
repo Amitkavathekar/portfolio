@@ -1,4 +1,5 @@
-import { Github, Linkedin, Instagram, Send } from "lucide-react"
+import { Github, Linkedin, Instagram } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 
 export default function Footer() {
   return (
@@ -9,11 +10,11 @@ export default function Footer() {
         <div className="flex gap-4 text-white text-xl mb-3 md:mb-0">
 
           <a
-            href="https://t.me/Amitkavathekar"
+            href="https://wa.me/918208815791"
             target="_blank"
             className="hover:text-orange-500 transition"
           >
-            <Send size={22} />
+            <FaWhatsapp size={22} />
           </a>
 
           <a
