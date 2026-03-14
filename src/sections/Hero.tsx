@@ -3,7 +3,7 @@ import { Button } from "../components/ui/button.tsx"
 import { FaWhatsapp, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa"
 import { useEffect, useRef } from "react"
 import Typed from "typed.js"
-import amitImage from "../assets/amit.jpg"
+import { amitImage } from "../assets"
 // Removed previous PDF import
 
 const NEW_CV_LINK = "https://drive.google.com/file/d/18MjtY-mvB-GziYAmXkSlc2-E74fw6BcY/view"

@@ -1,5 +1,5 @@
 import { Card, CardContent } from "../components/ui/card"
-import codsoft from "../assets/codsoft.jpeg"
+import { codsoft } from "../assets"
 
 export default function Experience() {
   return (
