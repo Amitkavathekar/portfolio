@@ -15,6 +15,8 @@ import {
 } from "react-icons/fa"
 import { SiTailwindcss, SiC } from "react-icons/si"
 
+// FaNodeJs has been removed, as requested
+
 const skills = [
   {
     name: "C",
