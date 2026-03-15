@@ -81,15 +81,37 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-2">
-      <div className="container mx-auto">
-        <h3 className="mt-5 mb-10 text-center text-4xl font-semibold tracking-widest uppercase">
+    <section
+      id="skills"
+      className="
+        py-12
+        max-[480px]:py-10
+        sm:py-16
+      "
+    >
+      <div className="container mx-auto px-4 max-[480px]:px-3 sm:px-6">
+        <h3
+          className="
+            mt-2 mb-10 text-center
+            text-2xl font-semibold tracking-widest uppercase
+            max-[480px]:text-xl
+            sm:text-3xl
+            md:text-4xl
+          "
+        >
           Skills
         </h3>
-        <div className="mx-auto flex max-w-5xl flex-col items-stretch gap-20 md:flex-row">
+        <div className="mx-auto flex max-w-5xl flex-col items-stretch gap-16 md:flex-row md:gap-20">
           <div className="flex h-full w-full flex-col gap-4 md:w-6/12">
             <div className="flex h-full flex-col">
-              <div className="grid h-full gap-4 md:grid-cols-2">
+              <div
+                className="
+                  grid h-full gap-4
+                  max-[480px]:grid-cols-2
+                  sm:grid-cols-2
+                  md:grid-cols-2
+                "
+              >
                 {skills.map((skill) => (
                   <Card
                     key={skill.name}
@@ -109,7 +131,13 @@ export default function Skills() {
               <img
                 src={skillsImage}
                 alt="Skills Illustration"
-                className="h-full w-full rounded-lg object-cover shadow-lg"
+                className="
+                  h-full w-full rounded-lg object-cover shadow-lg
+                  max-[480px]:max-w-xs
+                  sm:max-w-sm
+                  md:max-w-md
+                  mx-auto
+                "
                 style={{
                   minHeight: "100%",
                   minWidth: "100%",

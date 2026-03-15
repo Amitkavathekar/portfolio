@@ -17,17 +17,55 @@ export default function About() {
   }
 
   return (
-    <section id="about" className="py-20">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section
+      id="about"
+      className="
+        py-16
+        max-[480px]:py-12
+        sm:py-20
+      "
+    >
+      <div
+        className="
+          mx-auto grid max-w-6xl items-center gap-10
+          px-4
+          max-[480px]:gap-8 max-[480px]:px-3
+          sm:px-6
+          md:grid-cols-2
+        "
+      >
         <img
           src={laptopworking}
           alt="Amit Kavathekar"
-          className="rounded-xl shadow-lg w-full object-cover"
+          className="
+            w-full rounded-xl object-cover shadow-lg
+            max-[480px]:max-h-64
+            sm:max-h-80
+            md:max-h-[360px]
+          "
         />
 
-        <div>
-          <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-gray-600 mb-4">
+        <div className="max-[480px]:text-center md:text-left">
+          <h2
+            className="
+              mb-4
+              text-2xl font-bold
+              max-[480px]:text-xl
+              sm:text-3xl
+              md:text-4xl
+            "
+          >
+            About Me
+          </h2>
+          <p
+            className="
+              mb-4 text-gray-600
+              text-sm
+              max-[480px]:text-xs
+              sm:text-base
+              md:text-lg
+            "
+          >
             Hello! I'm Amit Kavathekar, a passionate and motivated front-end
             developer eager to kickstart my career in the world of web
             development. I developed a strong foundation in HTML, CSS,
@@ -46,6 +84,10 @@ export default function About() {
               transition
               hover:text-black hover:shadow-[6px_6px_0px_#ea580c]
               active:text-black active:shadow-[6px_6px_0px_#ea580c]
+              px-5 py-2 text-xs
+              max-[480px]:px-4 max-[480px]:py-[7px] max-[480px]:text-[11px]
+              sm:text-sm
+              md:text-base
             "
             type="button"
           >

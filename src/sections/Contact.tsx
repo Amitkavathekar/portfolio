@@ -46,20 +46,56 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="flex justify-center bg-gray-100 py-16">
-      <div className="w-full max-w-4xl rounded-lg bg-black px-6 py-16 text-white">
+    <section
+      id="contact"
+      className="
+        flex justify-center bg-gray-100
+        py-16
+        max-[480px]:py-12
+        sm:py-16
+      "
+    >
+      <div
+        className="
+          w-full max-w-4xl rounded-lg bg-black
+          px-4 py-12
+          max-[480px]:px-4 max-[480px]:py-10
+          sm:px-6 sm:py-14
+          md:py-16
+          text-white
+        "
+      >
         {/* Title */}
-        <h1 className="mb-6 text-center text-4xl font-semibold">Contact Me</h1>
+        <h1
+          className="
+            mb-6 text-center
+            text-3xl font-semibold
+            max-[480px]:text-2xl
+            sm:text-3xl
+            md:text-4xl
+          "
+        >
+          Contact Me
+        </h1>
 
         {/* Description */}
-        <p className="text-center text-gray-300">
+        <p className="text-center text-gray-300 text-sm max-[480px]:text-xs sm:text-base">
           If you have any questions or want to get in touch, feel free
         </p>
-        <p className="mb-4 text-center text-gray-300">
+        <p className="mb-4 text-center text-gray-300 text-sm max-[480px]:text-xs sm:text-base">
           to drop me an email. I would love to hear from you!
         </p>
 
-        <h5 className="mb-10 text-center text-lg">Let's Build Together</h5>
+        <h5
+          className="
+            mb-10 text-center
+            text-base
+            max-[480px]:text-sm
+            sm:text-lg
+          "
+        >
+          Let's Build Together
+        </h5>
 
         {/* Email Button */}
         <div className="mb-12 flex justify-center">
@@ -72,7 +108,13 @@ export default function Contact() {
             }}
             onMouseDown={() => setActive(true)}
             onMouseUp={() => setActive(false)}
-            className={getButtonClass()}
+            className={`
+              ${getButtonClass()}
+              px-6 py-2 text-xs
+              max-[480px]:px-5 max-[480px]:py-[7px] max-[480px]:text-[11px]
+              sm:text-sm
+              md:text-base
+            `}
           >
             <span
               className={`flex items-center ${hovered || active ? "text-black" : "text-white"} transition`}
@@ -95,8 +137,12 @@ export default function Contact() {
             </div>
 
             <div>
-              <h5 className="text-sm text-gray-300 uppercase">Phone</h5>
-              <p className="text-lg font-medium">+91 8208815791</p>
+              <h5 className="text-sm text-gray-300 uppercase max-[480px]:text-xs">
+                Phone
+              </h5>
+              <p className="text-lg font-medium max-[480px]:text-base">
+                +91 8208815791
+              </p>
             </div>
           </div>
 
@@ -107,8 +153,12 @@ export default function Contact() {
             </div>
 
             <div>
-              <h5 className="text-sm text-gray-300 uppercase">Address</h5>
-              <p className="text-lg font-medium">Pune, Maharashtra</p>
+              <h5 className="text-sm text-gray-300 uppercase max-[480px]:text-xs">
+                Address
+              </h5>
+              <p className="text-lg font-medium max-[480px]:text-base">
+                Pune, Maharashtra
+              </p>
             </div>
           </div>
         </div>
