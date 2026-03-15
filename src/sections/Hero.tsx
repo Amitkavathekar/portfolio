@@ -30,9 +30,10 @@ export default function Hero() {
         items-center
         bg-white
         pt-10
-        max-[480px]:pt-6
-        sm:pt-14
+        small-mobile:pt-6
+        big-phone:pt-[20px]
         md:pt-20
+        justify-center
       "
     >
       <div
@@ -42,15 +43,17 @@ export default function Hero() {
           max-w-6xl
           items-center
           gap-8
-          max-[480px]:gap-5
-          sm:gap-10
+          small-mobile:gap-5
+          big-phone:gap-[20px]
           md:grid-cols-2
           md:gap-14
           lg:gap-20
           xl:gap-24
           px-4
-          sm:px-6
+          big-phone:px-[20px]
           md:px-8
+          justify-items-center
+          text-center
         "
       >
         {/* Left Content */}
@@ -59,9 +62,8 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
           className="
-            text-left
-            max-[480px]:text-center
-            md:text-left
+            flex flex-col items-center text-center
+            w-full
           "
         >
           <h2 className="
@@ -70,8 +72,8 @@ export default function Hero() {
             font-medium
             tracking-tight
             text-gray-800
-            max-[480px]:text-sm
-            sm:text-lg
+            small-mobile:text-sm
+            big-phone:text-lg
             md:text-xl
             xl:text-2xl
           ">
@@ -84,8 +86,8 @@ export default function Hero() {
             leading-tight
             font-bold
             text-[#22223b]
-            max-[480px]:text-2xl
-            sm:text-4xl
+            small-mobile:text-2xl
+            big-phone:text-4xl
             md:text-5xl
             xl:text-6xl
           ">
@@ -98,8 +100,8 @@ export default function Hero() {
             text-lg
             font-semibold
             text-gray-700
-            max-[480px]:text-base
-            sm:text-xl
+            small-mobile:text-base
+            big-phone:text-xl
             md:text-2xl
             xl:text-3xl
           ">
@@ -112,9 +114,9 @@ export default function Hero() {
             text-sm
             font-medium
             text-gray-600
-            max-[480px]:mx-auto
-            max-[480px]:text-xs
-            sm:text-base
+            mx-auto
+            small-mobile:text-xs
+            big-phone:text-base
             md:text-lg
             xl:text-xl
           ">
@@ -127,7 +129,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
-            className="block max-[480px]:mx-auto w-fit"
+            className="block mx-auto w-fit big-phone:mx-auto"
           >
             <Button
               className="
@@ -140,8 +142,8 @@ export default function Hero() {
                 active:text-black active:shadow-[6px_6px_0px_#ea580c]
                 px-6 py-2
                 text-xs
-                max-[480px]:px-4 max-[480px]:py-2 max-[480px]:text-[11px]
-                sm:text-sm
+                small-mobile:px-4 small-mobile:py-2 small-mobile:text-[11px]
+                big-phone:text-sm big-phone:px-[20px] big-phone:py-[20px]
                 md:text-base
                 rounded-lg
               "
@@ -155,10 +157,10 @@ export default function Hero() {
             mt-7
             flex
             gap-4
-            max-[480px]:justify-center
-            sm:gap-5
+            justify-center
+            big-phone:gap-[20px]
             text-lg
-            sm:text-xl
+            big-phone:text-xl
             md:text-2xl
           ">
             <a
@@ -205,8 +207,10 @@ export default function Hero() {
             flex
             items-center
             justify-center
-            max-[480px]:mt-6
+            small-mobile:mt-6
+            big-phone:mt-[20px]
             md:mt-0
+            w-full
           "
         >
           <img
@@ -215,12 +219,13 @@ export default function Hero() {
             className="
               h-[200px] w-[140px]
               rounded-2xl border-4 border-white object-cover shadow-2xl
-              sm:h-[280px] sm:w-[200px]
+              big-phone:h-[280px] big-phone:w-[200px]
               md:h-[340px] md:w-[260px]
               lg:h-[420px] lg:w-[330px]
               xl:h-[580px] xl:w-[460px]
-              max-[480px]:h-[160px] max-[480px]:w-[110px]
+              small-mobile:h-[160px] small-mobile:w-[110px]
               transition-all
+              mx-auto
             "
           />
         </motion.div>
