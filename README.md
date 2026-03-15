@@ -1,36 +1,50 @@
-# Amit Kavathekar — Portfolio
+ # 🌐 Amit Kavathekar — Personal Portfolio
 
-A modern, responsive personal portfolio built with React and TypeScript. Showcases skills, experience, projects, and contact information with smooth animations and a clean design.
 
-![Portfolio](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square&logo=typescript) ![Vite](https://img.shields.io/badge/Vite-7-646cff?style=flat-square&logo=vite) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?style=flat-square&logo=tailwindcss)
+The portfolio highlights my work in **Frontend Development**, modern UI design, reusable component architecture, and smooth UI animations.
+
+🔗 **Live Website**
+https://amit-rtst.vercel.app/
+
+---
+
+## 🧰 Tech Badges
+
+![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square\&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square\&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-7-646cff?style=flat-square\&logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4-38bdf8?style=flat-square\&logo=tailwindcss)
 
 ---
 
 ## ✨ Features
 
-- **Hero** — Intro with typed role (Frontend / Web / React Developer) and social links (WhatsApp, LinkedIn, Instagram, GitHub)
-- **About** — Short bio and background
-- **Experience** — Work and education timeline
-- **Skills** — Tech stack and tools
-- **Projects** — Project cards with links and descriptions
-- **Contact** — Get in touch section
-- **Responsive** — Mobile-first layout
-- **Animations** — Smooth transitions with Motion
-- **CV** — Link to view/download resume
+* **Hero Section** — Intro with typed role (Frontend / Web / React Developer)
+* **About Section** — Personal introduction and background
+* **Experience Timeline** — Work and education details
+* **Skills Section** — Technologies and tools used
+* **Projects Showcase** — Project cards with live links and descriptions
+* **Contact Section** — Easy ways to get in touch
+* **Social Links** — WhatsApp, LinkedIn, Instagram, GitHub
+* **Responsive Design** — Mobile-first layout
+* **Smooth Animations** — UI transitions using Motion
+* **Resume / CV** — View or download resume
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-| Category    | Technologies |
-|------------|--------------|
-| Framework  | React 19, TypeScript |
-| Build      | Vite 7 |
-| Styling    | Tailwind CSS 4 |
-| UI         | Radix UI, shadcn, Lucide React, React Icons |
-| Animation  | Motion |
-| Routing    | React Router DOM 7 |
-| Other      | Typed.js, class-variance-authority, clsx, tailwind-merge |
+| Category     | Technologies                                   |
+| ------------ | ---------------------------------------------- |
+| Framework    | React 19, TypeScript                           |
+| Build Tool   | Vite 7                                         |
+| Styling      | Tailwind CSS 4                                 |
+| UI Libraries | Radix UI, Shadcn UI                            |
+| Icons        | Lucide React, React Icons                      |
+| Animation    | Motion                                         |
+| Routing      | React Router DOM 7                             |
+| Utilities    | clsx, tailwind-merge, class-variance-authority |
+| Other        | Typed.js                                       |
 
 ---
 
@@ -38,68 +52,84 @@ A modern, responsive personal portfolio built with React and TypeScript. Showcas
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- npm or yarn
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/Amitkavathekar/portfolio.git
-cd portfolio
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Other Scripts
-
-| Command        | Description              |
-|----------------|--------------------------|
-| `npm run dev`  | Start dev server         |
-| `npm run build`| Production build         |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint               |
-| `npm run format` | Format with Prettier   |
-| `npm run typecheck` | TypeScript check     |
+* Node.js (v18+ recommended)
+* npm 
 
 ---
 
-## 📁 Project Structure
+### Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Amitkavathekar/portfolio.git
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Open in browser:
 
 ```
-portfolio/
+http://localhost:5173
+```
+
+---
+
+## 📂 Project Structure
+
+```
+portfolio
+│
 ├── index.html
 ├── package.json
-├── src/
-│   ├── main.tsx           # Entry point
-│   ├── App.tsx            # App shell & routing
-│   ├── assets/            # Images, etc.
-│   ├── components/        # Reusable UI (Navbar, Footer, ProjectCard, ui/)
-│   ├── pages/             # Page components (Home)
-│   ├── Routes/            # Route definitions
-│   └── sections/          # Hero, About, Experience, Skills, Project, Contact
-├── public/
+├── src
+│   ├── main.tsx
+│   ├── App.tsx
+│   ├── assets
+│   ├── components
+│   │   └── ui
+│   ├── pages
+│   ├── Routes
+│   └── sections
+│       ├── Hero
+│       ├── About
+│       ├── Experience
+│       ├── Skills
+│       ├── Projects
+│       └── Contact
+│
+├── public
 └── README.md
 ```
 
 ---
 
-## 📄 License
+## 🌍 Deployment
 
-This project is open source and available for reference. Feel free to fork and adapt for your own portfolio.
+This project is deployed using **Vercel**.
 
 ---
 
-## 👤 Author
+* LinkedIn
+  https://www.linkedin.com/in/amitkavathekar/
 
-**Amit Kavathekar**
+* GitHub
+  https://github.com/Amitkavathekar
 
-- LinkedIn: [amitkavathekar](https://www.linkedin.com/in/amitkavathekar/)
-- GitHub: [Amitkavathekar](https://github.com/Amitkavathekar)
-- Instagram: [amittt_0x9](https://instagram.com/amittt_0x9/)
+* Instagram
+  https://instagram.com/amittt_0x9/
+
+---
+
+⭐ If you like this project, consider giving it a **star on GitHub**.
