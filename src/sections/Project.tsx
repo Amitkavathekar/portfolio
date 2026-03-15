@@ -6,7 +6,7 @@ import {
   // blinkitImg,
   temperatureImg,
   // organicFoodImg,
-  googleHomeImg,
+  // googleHomeImg,
 } from "../assets"
 import dicegame from "../assets/dicegame.jpg" // Corrected import for dicegame
 import calculator from "../assets/calculator.jpg" // Corrected import for dicegame
@@ -85,15 +85,15 @@ const projects: Project[] = [
   //   demo: "https://oibsip-taskno-1-landingpage.vercel.app/",
   //   reverse: false,
   // },
-  {
-    title: "Google Home Page",
-    description:
-      "A Google homepage clone that mimics the design and basic layout of the Google search page.",
-    tech: "Frontend: HTML, CSS",
-    image: googleHomeImg,
-    demo: "https://google-home-page-beta.vercel.app/",
-    reverse: true,
-  },
+  // {
+  //   title: "Google Home Page",
+  //   description:
+  //     "A Google homepage clone that mimics the design and basic layout of the Google search page.",
+  //   tech: "Frontend: HTML, CSS",
+  //   image: googleHomeImg,
+  //   demo: "https://google-home-page-beta.vercel.app/",
+  //   reverse: true,
+  // },
 ]
 
 export default function Projects() {
