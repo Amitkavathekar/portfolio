@@ -1,79 +1,68 @@
-# 🌐 Personal Portfolio
+ # 🌐 Amit Kavathekar — Personal Portfolio
 
-![Portfolio Preview](https://amit-rtst.vercel.app/preview.png)
 
-A modern and fully responsive **Personal Portfolio Website** built to showcase my **projects, skills, and development journey**.
-
-This portfolio highlights my work in **Frontend Development**, modern UI design, and component-based architecture using the **React ecosystem**.
+The portfolio highlights my work in **Frontend Development**, modern UI design, reusable component architecture, and smooth UI animations.
 
 🔗 **Live Website**
 https://amit-rtst.vercel.app/
 
 ---
 
-## 🚀 Features
+## 🧰 Tech Badges
 
-* 📱 Fully Responsive Design (Mobile, Tablet, Desktop)
-* 🎨 Modern UI / UX Layout
-* ✨ Smooth Animations
-* 🧩 Reusable React Components
-* 📦 Project Showcase Section
-* 🛠 Tech Stack Display
-* ⚡ Fast Performance using Vite
+![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square\&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?style=flat-square\&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-7-646cff?style=flat-square\&logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4-38bdf8?style=flat-square\&logo=tailwindcss)
+
+---
+
+## ✨ Features
+
+* **Hero Section** — Intro with typed role (Frontend / Web / React Developer)
+* **About Section** — Personal introduction and background
+* **Experience Timeline** — Work and education details
+* **Skills Section** — Technologies and tools used
+* **Projects Showcase** — Project cards with live links and descriptions
+* **Contact Section** — Easy ways to get in touch
+* **Social Links** — WhatsApp, LinkedIn, Instagram, GitHub
+* **Responsive Design** — Mobile-first layout
+* **Smooth Animations** — UI transitions using Motion
+* **Resume / CV** — View or download resume
 
 ---
 
 ## 🛠 Tech Stack
 
-### Frontend
-
-* React.js
-* TypeScript
-* Tailwind CSS
-* Shadcn UI
-
-### Tools & Platforms
-
-* Vite
-* Git & GitHub
-* VS Code
-* Vercel (Deployment)
+| Category     | Technologies                                   |
+| ------------ | ---------------------------------------------- |
+| Framework    | React 19, TypeScript                           |
+| Build Tool   | Vite 7                                         |
+| Styling      | Tailwind CSS 4                                 |
+| UI Libraries | Radix UI, Shadcn UI                            |
+| Icons        | Lucide React, React Icons                      |
+| Animation    | Motion                                         |
+| Routing      | React Router DOM 7                             |
+| Utilities    | clsx, tailwind-merge, class-variance-authority |
+| Other        | Typed.js                                       |
 
 ---
 
-## 📂 Project Structure
+## 🚀 Getting Started
 
-```
-portfolio
-│
-├── public
-├── src
-│   ├── components
-│   │   └── ui
-│   ├── pages
-│   ├── assets
-│   ├── lib
-│   ├── App.tsx
-│   └── main.tsx
-│
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
-```
+### Prerequisites
+
+* Node.js (v18+ recommended)
+* npm 
 
 ---
 
-## ⚙️ Installation & Setup
+### Installation
 
 Clone the repository
 
 ```bash
 git clone https://github.com/Amitkavathekar/portfolio.git
-```
-
-Navigate to the project folder
-
-```bash
 cd portfolio
 ```
 
@@ -89,35 +78,40 @@ Run the development server
 npm run dev
 ```
 
----
+Open in browser:
 
-## 🧩 Using Shadcn UI Components
-
-Add a new component
-
-```bash
-npx shadcn@latest add button
 ```
-
-Example usage
-
-```tsx
-import { Button } from "@/components/ui/button"
-
-function App() {
-  return <Button>Click Me</Button>
-}
+http://localhost:5173
 ```
 
 ---
 
-## 📸 Portfolio Sections
+## 📂 Project Structure
 
-* Hero Section
-* About Me
-* Skills
-* Projects
-* Contact
+```
+portfolio
+│
+├── index.html
+├── package.json
+├── src
+│   ├── main.tsx
+│   ├── App.tsx
+│   ├── assets
+│   ├── components
+│   │   └── ui
+│   ├── pages
+│   ├── Routes
+│   └── sections
+│       ├── Hero
+│       ├── About
+│       ├── Experience
+│       ├── Skills
+│       ├── Projects
+│       └── Contact
+│
+├── public
+└── README.md
+```
 
 ---
 
@@ -125,20 +119,16 @@ function App() {
 
 This project is deployed using **Vercel**.
 
-Build the project
-
-```bash
-npm run build
-```
-
-Then deploy the **dist** folder to **Vercel**.
-
 ---
 
-## 👨‍💻 Author
+* LinkedIn
+  https://www.linkedin.com/in/amitkavathekar/
 
-**Amit Kavathekar**
-Frontend Developer passionate about building modern and responsive web applications using the **React ecosystem**.
+* GitHub
+  https://github.com/Amitkavathekar
+
+* Instagram
+  https://instagram.com/amittt_0x9/
 
 ---
 
