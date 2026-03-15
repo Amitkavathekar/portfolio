@@ -3,9 +3,9 @@ import { Card } from "../components/ui/card.tsx"
 import {
   mealaweImg,
   codeeditorImg,
-  blinkitImg,
+  // blinkitImg,
   temperatureImg,
-  organicFoodImg,
+  // organicFoodImg,
   googleHomeImg,
 } from "../assets"
 
@@ -39,15 +39,6 @@ const projects: Project[] = [
     reverse: true,
   },
   {
-    title: "Blinkit Website Clone",
-    description:
-      "A Blinkit website clone replicating the core functionality of Blinkit, an online grocery delivery service.",
-    tech: "Frontend: HTML, CSS, JavaScript",
-    image: blinkitImg,
-    demo: "https://amitkavathekar.github.io/blinkit-clone/",
-    reverse: false,
-  },
-  {
     title: "Temperature Converter",
     description:
       "A simple temperature converter project built with vanilla JavaScript.",
@@ -55,14 +46,23 @@ const projects: Project[] = [
     demo: "https://oibsip-taskno-3-temperature-convert.vercel.app/",
     reverse: true,
   },
-  {
-    title: "Organic Food",
-    description: "Simple landing page for organic food products.",
-    tech: "Frontend: HTML, CSS",
-    image: organicFoodImg,
-    demo: "https://oibsip-taskno-1-landingpage.vercel.app/",
-    reverse: false,
-  },
+  // {
+  //   title: "Blinkit Website Clone",
+  //   description:
+  //     "A Blinkit website clone replicating the core functionality of Blinkit, an online grocery delivery service.",
+  //   tech: "Frontend: HTML, CSS, JavaScript",
+  //   image: blinkitImg,
+  //   demo: "https://amitkavathekar.github.io/blinkit-clone/",
+  //   reverse: false,
+  // },
+  // {
+  //   title: "Organic Food",
+  //   description: "Simple landing page for organic food products.",
+  //   tech: "Frontend: HTML, CSS",
+  //   image: organicFoodImg,
+  //   demo: "https://oibsip-taskno-1-landingpage.vercel.app/",
+  //   reverse: false,
+  // },
   {
     title: "Google Home Page",
     description:
