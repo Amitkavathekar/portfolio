@@ -3,9 +3,9 @@ import { Card } from "../components/ui/card.tsx"
 import {
   mealaweImg,
   codeeditorImg,
-  blinkitImg,
+  // blinkitImg,
   temperatureImg,
-  organicFoodImg,
+  // organicFoodImg,
   googleHomeImg,
 } from "../assets"
 
