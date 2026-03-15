@@ -8,6 +8,8 @@ import {
   // organicFoodImg,
   googleHomeImg,
 } from "../assets"
+import dicegame from "../assets/dicegame.jpg" // Corrected import for dicegame
+import calculator from "../assets/calculator.jpg" // Corrected import for dicegame
 
 interface Project {
   title: string
@@ -37,6 +39,24 @@ const projects: Project[] = [
     image: mealaweImg,
     demo: "https://home-made-food-kocv.vercel.app/",
     reverse: true,
+  },
+  {
+    title: "Dice Game",
+    description:
+      "An interactive dice game where two players roll virtual dice and the player with the higher number wins. The game uses JavaScript to generate random dice values and dynamically update the UI.",
+    tech: "Frontend: HTML, CSS, JavaScript",
+    image: dicegame,
+    demo: "https://dice-game-mocha-eta.vercel.app/",
+    reverse: false,
+  },
+  {
+    title: "Calculator App",
+    description:
+      "A responsive calculator web application that performs basic arithmetic operations with a clean UI and interactive button layout. Designed for quick and accurate calculations directly in the browser.",
+    tech: "HTML, CSS, JavaScript",
+    image: calculator,
+    demo: "https://calculator-virid-nu-53.vercel.app/",
+    reverse: false,
   },
   {
     title: "Temperature Converter",
