@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button } from "../components/ui/button.tsx"
-import laptopworking from '../assets/laptopworking.avif'
+import { laptopworking } from "../assets"
 
 export default function About() {
   const [copied, setCopied] = useState(false)
@@ -11,7 +11,7 @@ export default function About() {
       await navigator.clipboard.writeText(email)
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
-    } catch (err) {
+    } catch {
       setCopied(false)
     }
   }

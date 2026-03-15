@@ -5,6 +5,7 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/", // Ensures asset paths work on Vercel (and any subpath if you change this)
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
