@@ -61,14 +61,12 @@ export default function Navbar() {
           </button>
         </nav>
 
-        <button
+        <Button
           onClick={() => scrollToSection("contact")}
-          className="cursor-pointer"
+          className="bg-orange-500 tracking-widest text-white uppercase shadow-[6px_6px_0px_#d1d5db] transition hover:text-black hover:shadow-[6px_6px_0px_#ea580c] active:text-black active:shadow-[6px_6px_0px_#ea580c]"
         >
-          <Button className="bg-orange-500 tracking-widest text-white uppercase shadow-[6px_6px_0px_#d1d5db] transition hover:text-black hover:shadow-[6px_6px_0px_#ea580c] active:text-black active:shadow-[6px_6px_0px_#ea580c]">
-            Contact
-          </Button>
-        </button>
+          Contact
+        </Button>
       </div>
     </header>
   )

@@ -1,12 +1,12 @@
 import { Card, CardContent } from "../components/ui/card"
-import { codsoft } from "../assets"
+import { codsoft, experienceBg } from "../assets"
 
 export default function Experience() {
   return (
     <section
       id="experience"
       className="min-h-screen bg-cover bg-center py-20"
-      style={{ backgroundImage: "url('/assets/img/2.jpg')" }}
+      style={{ backgroundImage: `url(${experienceBg})` }}
     >
       <div className="mx-auto max-w-6xl px-6">
         {/* Section Heading */}

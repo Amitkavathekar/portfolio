@@ -1,13 +1,13 @@
 import { Button } from "../components/ui/button.tsx"
 import { Card } from "../components/ui/card.tsx"
-import { mealaweImg, codeeditorImg } from "../assets"
-
-// Import public images at the top
-import blinkitImg from "/assets/img/blinkit home page.png"
-import temperatureImg from "/assets/img/tempreture.jpg"
-import organicFoodImg from "/assets/img/1 (2).jpg"
-import googleHomeImg from "/assets/img/google.home.jpg"
-// Fix quickcodeImg to use a placeholder since the file does not exist
+import {
+  mealaweImg,
+  codeeditorImg,
+  blinkitImg,
+  temperatureImg,
+  organicFoodImg,
+  googleHomeImg,
+} from "../assets"
 
 interface Project {
   title: string
