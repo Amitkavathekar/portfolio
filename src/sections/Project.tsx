@@ -76,17 +76,33 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-orange-50 py-24">
-      <div className="mx-auto max-w-6xl px-4">
-        <h2 className="mb-16 text-center text-4xl font-semibold tracking-widest uppercase">
+    <section
+      id="projects"
+      className="
+        bg-orange-50 py-16
+        max-[480px]:py-12
+        sm:py-20
+        md:py-24
+      "
+    >
+      <div className="mx-auto max-w-6xl px-4 max-[480px]:px-3 sm:px-6">
+        <h2
+          className="
+            mb-12 text-center
+            text-2xl font-semibold tracking-widest uppercase
+            max-[480px]:text-xl
+            sm:mb-14 sm:text-3xl
+            md:mb-16 md:text-4xl
+          "
+        >
           Latest Project
         </h2>
 
-        <div className="space-y-24">
+        <div className="space-y-16 sm:space-y-20 md:space-y-24">
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`grid items-center gap-10 md:grid-cols-2 ${
+              className={`grid items-center gap-8 sm:gap-10 md:grid-cols-2 ${
                 project.reverse ? "md:flex-row-reverse" : ""
               }`}
             >
@@ -95,7 +111,12 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full object-cover"
+                  className="
+                    w-full object-cover
+                    max-[480px]:max-h-56
+                    sm:max-h-72
+                    md:max-h-80
+                  "
                   onError={e => {
                     // fallback to placeholder if image fails to load
                     (e.currentTarget as HTMLImageElement).src = `https://via.placeholder.com/600x400?text=${encodeURIComponent(project.title + ' Image Not Found')}`
@@ -104,13 +125,39 @@ export default function Projects() {
               </Card>
 
               {/* TEXT */}
-              <div>
-                <h3 className="mb-4 text-3xl font-semibold">{project.title}</h3>
+              <div className="max-[480px]:text-center md:text-left">
+                <h3
+                  className="
+                    mb-3
+                    text-2xl font-semibold
+                    max-[480px]:text-xl
+                    sm:text-2xl
+                    md:mb-4 md:text-3xl
+                  "
+                >
+                  {project.title}
+                </h3>
 
-                <p className="mb-4 text-gray-700">{project.description}</p>
+                <p
+                  className="
+                    mb-3 text-gray-700
+                    text-sm
+                    max-[480px]:text-xs
+                    sm:text-base
+                  "
+                >
+                  {project.description}
+                </p>
 
                 {project.tech && (
-                  <p className="mb-6 text-gray-700">
+                  <p
+                    className="
+                      mb-5 text-gray-700
+                      text-sm
+                      max-[480px]:text-xs
+                      sm:text-base sm:mb-6
+                    "
+                  >
                     Technology Stack: {project.tech}
                   </p>
                 )}
